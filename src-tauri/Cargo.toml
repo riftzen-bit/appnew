@@ -1,0 +1,17 @@
+[package]
+name = "appnew"
+version = "0.1.0"
+description = "Focus Planner desktop app"
+authors = ["appnew"]
+edition = "2021"
+default-run = "appnew"
+
+[lib]
+name = "appnew_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.6.1", features = [] }
+
+[dependencies]
+tauri = { version = "2.11.1", features = [] }
